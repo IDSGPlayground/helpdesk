@@ -1,3 +1,40 @@
 /* style.scss */
 body {
-  background: #47c3f1; }
+  background: gray-1; }
+
+h1 {
+  color: #999b9d;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+.center {
+  margin: 0 auto; }
+
+.wheel {
+  width: 600px; }
+
+.quarter-circle {
+  width: 300px;
+  height: 300px;
+  float: left; }
+
+.top-left {
+  background: #6ccbf3;
+  -moz-border-radius: 300px 0 0 0;
+  -webkit-border-radius: 300px 0 0 0; }
+
+.top-right {
+  background: #47c3f1;
+  -moz-border-radius: 0 300px 0 0;
+  -webkit-border-radius: 0 300px 0 0; }
+
+.bottom-right {
+  background: #248aaf;
+  -moz-border-radius: 0 0 0 300px;
+  -webkit-border-radius: 0 0 0 300px; }
+
+.bottom-left {
+  background: #17627e;
+  -moz-border-radius: 0 0 300px 0;
+  -webkit-border-radius: 0 0 300px 0; }
