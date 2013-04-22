@@ -1,6 +1,6 @@
 /* style.scss */
 body {
-  background: gray-1;
+  background: #e6e7e8;
   margin-top: 50px; }
 
 h1 {
@@ -44,7 +44,18 @@ h1 {
   -moz-border-radius: 450px;
   -webkit-border-radius: 450px;
   background: #999b9d;
-  z-index: -1; }
+  z-index: -2; }
+
+.center-circle-4 {
+  position: absolute;
+  margin-top: 175px;
+  margin-left: 175px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  background: #999b9d; }
 
 .wheel {
   margin: 55px auto;
@@ -57,7 +68,8 @@ h1 {
 
 .quarter-circle:hover {
   opacity: 0.8;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: -1; }
 
 .top-left {
   background: #6ccbf3;

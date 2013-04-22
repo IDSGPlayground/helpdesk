@@ -8,8 +8,11 @@ $blue-2: #47C3F1;
 $blue-3: #248AAF;
 $blue-4: #17627E;
 
+$circle-radius: 200px;
+
 body {
-    background: gray-1;
+    background: $gray-1;
+    margin-top: 50px;
 }
 
 h1 {
@@ -20,43 +23,102 @@ h1 {
 }
 
 .container {
-
 }
 
 .center {
     margin: 0 auto;
 }
 
+.center-circle-1 {
+    $center-circle-diameter: 150px;
+    position: absolute;
+    margin-top: $circle-radius - $center-circle-diameter/2;
+    margin-left: $circle-radius - $center-circle-diameter/2;
+    height: $center-circle-diameter;
+    width: $center-circle-diameter;
+    border-radius: $center-circle-diameter;
+    -moz-border-radius: $center-circle-diameter;
+    -webkit-border-radius: $center-circle-diameter;
+    background: $gray-3;
+}
+
+.center-circle-2 {
+    $center-circle-diameter: 130px;
+    position: absolute;
+    margin-top: $circle-radius - $center-circle-diameter/2;
+    margin-left: $circle-radius - $center-circle-diameter/2;
+    height: $center-circle-diameter;
+    width: $center-circle-diameter;
+    border-radius: $center-circle-diameter;
+    -moz-border-radius: $center-circle-diameter;
+    -webkit-border-radius: $center-circle-diameter;
+    background: $gray-1;
+}
+
+.center-circle-3 {
+    $center-circle-diameter: 450px;
+    position: absolute;
+    margin-top: $circle-radius - $center-circle-diameter/2;
+    margin-left: $circle-radius - $center-circle-diameter/2;
+    height: $center-circle-diameter;
+    width: $center-circle-diameter;
+    border-radius: $center-circle-diameter;
+    -moz-border-radius: $center-circle-diameter;
+    -webkit-border-radius: $center-circle-diameter;
+    background: $gray-3;
+    z-index: -2;
+}
+
+.center-circle-4 {
+    $center-circle-diameter: 50px;
+    position: absolute;
+    margin-top: $circle-radius - $center-circle-diameter/2;
+    margin-left: $circle-radius - $center-circle-diameter/2;
+    height: $center-circle-diameter;
+    width: $center-circle-diameter;
+    border-radius: $center-circle-diameter;
+    -moz-border-radius: $center-circle-diameter;
+    -webkit-border-radius: $center-circle-diameter;
+    background: $gray-3;
+}
+
 .wheel {
-    width: 600px;
+    margin: 55px auto;
+    width: 2 * $circle-radius;
 }
 
 .quarter-circle {
-    width: 300px;
-    height: 300px;
+    width: $circle-radius;
+    height: $circle-radius;
     float: left;
+}
+
+.quarter-circle:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: -1;
 }
 
 .top-left {
      background: $blue-1;
-     -moz-border-radius: 300px 0 0 0;
-     -webkit-border-radius: 300px 0 0 0;
+     -moz-border-radius: $circle-radius 0 0 0;
+     -webkit-border-radius: $circle-radius 0 0 0;
 }
 
 .top-right {
      background: $blue-2;
-     -moz-border-radius: 0 300px 0 0;
-     -webkit-border-radius: 0 300px 0 0;
+     -moz-border-radius: 0 $circle-radius 0 0;
+     -webkit-border-radius: 0 $circle-radius 0 0;
 }
 
 .bottom-right {
     background: $blue-3;
-    -moz-border-radius: 0 0 0 300px;
-    -webkit-border-radius: 0 0 0 300px;
+    -moz-border-radius: 0 0 0 $circle-radius;
+    -webkit-border-radius: 0 0 0 $circle-radius;
 }
 
 .bottom-left {
      background: $blue-4;
-     -moz-border-radius: 0 0 300px 0;
-     -webkit-border-radius: 0 0 300px 0;
+     -moz-border-radius: 0 0 $circle-radius 0;
+     -webkit-border-radius: 0 0 $circle-radius 0;
 }
