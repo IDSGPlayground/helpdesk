@@ -1,7 +1,7 @@
 /* style.scss */
 body {
   background: gray-1;
-  margin-top: 30px; }
+  margin-top: 50px; }
 
 h1 {
   color: #999b9d;
@@ -12,8 +12,42 @@ h1 {
 .center {
   margin: 0 auto; }
 
+.center-circle-1 {
+  position: absolute;
+  margin-top: 125px;
+  margin-left: 125px;
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  background: #999b9d; }
+
+.center-circle-2 {
+  position: absolute;
+  margin-top: 135px;
+  margin-left: 135px;
+  height: 130px;
+  width: 130px;
+  border-radius: 130px;
+  -moz-border-radius: 130px;
+  -webkit-border-radius: 130px;
+  background: #e6e7e8; }
+
+.center-circle-3 {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+  height: 450px;
+  width: 450px;
+  border-radius: 450px;
+  -moz-border-radius: 450px;
+  -webkit-border-radius: 450px;
+  background: #999b9d;
+  z-index: -1; }
+
 .wheel {
-  margin: 0 auto;
+  margin: 55px auto;
   width: 400px; }
 
 .quarter-circle {
