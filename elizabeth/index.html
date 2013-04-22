@@ -45,10 +45,30 @@
             <div class="center-circle-3">
             </div>
 
-
-
         </div>
 
     </div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(".top-left").hover (
+            function () {
+                $(".triangle").css({
+                    "transform": "rotate(-45deg)",
+                    "margin-left": "155px",
+                });
+            }
+        );
+
+        $(".top-right").hover (
+            function () {
+                $(".triangle").css({
+                    "transform": "rotate(45deg)",
+                    "margin-left": "205px",
+                });
+            }
+        );
+
+    </script>
 
 </body>
