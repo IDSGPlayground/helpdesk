@@ -82,6 +82,18 @@ h1 {
     -moz-border-radius: $center-circle-diameter;
     -webkit-border-radius: $center-circle-diameter;
     background: $gray-3;
+    z-index: 6;
+}
+
+.triangle {
+    position: absolute;
+    margin-top: $circle-radius - 50px;
+    margin-left: $circle-radius - 20px;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid $gray-2;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
     z-index: 5;
 }
 

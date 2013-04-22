@@ -58,6 +58,17 @@ h1 {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   background: #999b9d;
+  z-index: 6; }
+
+.triangle {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 180px;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #bebfc2;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
   z-index: 5; }
 
 .wheel {
